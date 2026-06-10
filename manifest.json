@@ -13,14 +13,38 @@
       "name": "SSIA Vanguard Chronicles",
       "latestVersion": "1.1.1_20_06_26",
       "channel": "stable",
+
       "downloadUrl": "https://github.com/tenstudiosbc/SSIAVC-Releases/releases/download/v1.1.1_20_06_26/SSIAVC_1.1.1_20_06_26.zip",
+      "repairUrl": "https://github.com/tenstudiosbc/SSIAVC-Releases/releases/download/v1.1.1_20_06_26/SSIAVC_1.1.1_20_06_26.zip",
+
       "fileName": "SSIAVC_1.1.1_20_06_26.zip",
       "executableName": "SSIAVC.exe",
+
       "sha256": "",
+      "repairSha256": "",
+
       "iconPath": "../Assets/SSIAVCIcon.ico",
       "websiteUrl": "https://ssiavc.tenstudiosbc.my.id/",
       "itchUrl": "https://tenstudios.itch.io/",
-      "forceUpdate": false
+      "forceUpdate": false,
+
+      "files": [
+        {
+          "path": "SSIAVC.exe",
+          "sha256": "",
+          "required": true
+        },
+        {
+          "path": "Game.ini",
+          "sha256": "",
+          "required": true
+        },
+        {
+          "path": "Game.rgss3a",
+          "sha256": "",
+          "required": false
+        }
+      ]
     }
   ]
 }
