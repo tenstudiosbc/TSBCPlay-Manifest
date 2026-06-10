@@ -1,0 +1,26 @@
+{
+  "gameName": "SSIA Vanguard Chronicles",
+  "launcherName": "TSBCPlay",
+  "channel": "stable",
+
+  "latestLauncherVersion": "1.0.0",
+  "latestGameVersion": "1.1.1_20_06_26",
+
+  "executableName": "SSIAVC.exe",
+
+  "gameDownloadUrl": "https://github.com/tenstudiosbc/SSIAVC-Releases/releases/download/v1.1.1_20_06_26/SSIAVC_1.1.1_20_06_26.zip",
+  "launcherDownloadUrl": "https://github.com/tenstudiosbc/TSBCPlay-Launcher-Project/releases/download/v1.0.0/TSBCPlay_1.0.0_win-x64.zip",
+
+  "patchNotesUrl": "https://raw.githubusercontent.com/tenstudiosbc/TSBCPlay-Manifest/main/patch-notes.md",
+
+  "minimumSupportedLauncherVersion": "1.0.0",
+
+  "forceUpdate": false,
+  "maintenanceMode": false,
+  "maintenanceMessage": "",
+
+  "sha256": {
+    "gameZip": "",
+    "launcherZip": ""
+  }
+}
