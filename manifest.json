@@ -3,7 +3,7 @@
   "latestLauncherVersion": "1.0.0-canary.2",
   "launcherDownloadUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/releases/download/1.0.0.Canary.2/TSBCPlay_Canary_1.0.0-canary.1_win-x64.zip",
   "patchNotesUrl": "https://raw.githubusercontent.com/tenstudiosbc/TSBCPlay-Manifest/main/patch-notes.md",
-  "minimumSupportedLauncherVersion": "1.0.0-canary.1",
+  "minimumSupportedLauncherVersion": "1.0.0-canary.2",
   "maintenanceMode": false,
   "maintenanceMessage": "",
 
