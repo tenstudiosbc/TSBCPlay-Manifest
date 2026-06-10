@@ -1,25 +1,28 @@
 {
-  "launcherName": "TSBCPlay",
-  "latestLauncherVersion": "1.0.1",
-  "launcherDownloadUrl": "https://github.com/tenstudiosbc/TSBCPlay-Launcher-Project/releases/download/v1.0.1/TSBCPlay1.0.1.zip",
+  "launcherName": "TSBCPlay Canary",
+  "latestLauncherVersion": "1.0.0-canary.1",
+  "launcherDownloadUrl": "https://github.com/tenstudiosbc/TSBCPlay-Launcher-Project/releases/download/v1.0.0-canary.1/TSBCPlay_Canary_1.0.0-canary.1_win-x64.zip",
   "patchNotesUrl": "https://raw.githubusercontent.com/tenstudiosbc/TSBCPlay-Manifest/main/patch-notes.md",
-  "minimumSupportedLauncherVersion": "1.0.0",
+  "minimumSupportedLauncherVersion": "1.0.0-canary.1",
   "maintenanceMode": false,
-  "maintenanceMessage": "SSIA VC Installing functions is bugged out, please wait while we resolved this issue",
+  "maintenanceMessage": "",
 
   "games": [
     {
       "id": "ssiavc",
       "name": "SSIA Vanguard Chronicles",
-      "latestVersion": "1.1.1_20_06_26",
-      "channel": "stable",
+      "latestVersion": "1.1.1_20_06_26-canary.1",
+      "channel": "canary",
 
-      "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_05_06_26_Windws/SSIA.Vanguard.Chronicles.1.1.1.zip",
-      "repairUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_05_06_26_Windws/SSIA.Vanguard.Chronicles.1.1.1.zip",
+      "downloadUrl": "",
+      "repairUrl": "",
 
       "fileName": "SSIAVC_1.1.1_20_06_26.zip",
+      "packageExecutableName": "SSIAVC.exe",
+      "playableExecutableName": "Game.exe",
       "executableName": "SSIAVC.exe",
 
+      "sizeBytes": 0,
       "sha256": "",
       "repairSha256": "",
 
@@ -30,14 +33,14 @@
 
       "files": [
         {
-          "path": "SSIAVC.exe",
+          "path": "Game.exe",
           "sha256": "",
           "required": true
         },
         {
           "path": "Game.ini",
           "sha256": "",
-          "required": true
+          "required": false
         },
         {
           "path": "Game.rgss3a",
