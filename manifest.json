@@ -1,9 +1,9 @@
 {
   "launcherName": "TSBCPlay Canary",
-  "latestLauncherVersion": "1.0.1-canary.5",
-  "launcherDownloadUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/releases/download/V1.0.1.Canary.5/TSBCPlay1.0.1.Canary.5.zip",
-  "patchNotesUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/releases/download/V1.0.1.Canary.5/TSBCPlay1.0.1.Canary.5.zip",
-  "minimumSupportedLauncherVersion": "1.0.1-canary.5",
+  "latestLauncherVersion": "1.0.1-canary.6",
+  "launcherDownloadUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/releases/download/V1.0.1.Canary.6/TSBCPlay1.0.1.Canary.6.zip",
+  "patchNotesUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/releases/download/V1.0.1.Canary.6/TSBCPlay1.0.1.Canary.6.zip",
+  "minimumSupportedLauncherVersion": "1.0.1-canary.6",
   "maintenanceMode": false,
   "maintenanceMessage": "",
   "games": [
