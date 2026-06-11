@@ -11,13 +11,13 @@
     {
       "id": "ssiavc",
       "name": "SSIA Vanguard Chronicles",
-      "latestVersion": "1.1.1_20_06_26",
+      "latestVersion": "1.1.1_11_06_26",
       "channel": "final",
 
-      "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_05_06_26_Windws/SSIA.Vanguard.Chronicles.1.1.1.zip",
-      "repairUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_05_06_26_Windws/SSIA.Vanguard.Chronicles.1.1.1.zip",
+      "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26/SSIA.Vanguard.Chronicles.1.1.1_11.06.26.zip",
+      "repairUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26/SSIA.Vanguard.Chronicles.1.1.1_11.06.26.zip",
 
-      "fileName": "SSIAVC_1.1.1_20_06_26.zip",
+      "fileName": "SSIAVC_1.1.1_11_06_26.zip",
       "packageExecutableName": "SSIAVC.exe",
       "playableExecutableName": "Game.exe",
       "executableName": "SSIAVC.exe",
