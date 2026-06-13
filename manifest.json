@@ -38,36 +38,32 @@
           "extractTo": "Graphics/Pictures",
           "detectPath": "Graphics/Pictures",
           "allowOverwrite": true,
-          "deletePackageAfterExtract": true,
-          "sizeBytes": 0,
-          "sha256": "",
-          "repairSha256": "",
-          "description": "Optional extra RPG Maker VX Ace Graphics/Pictures assets for SSIA Vanguard Chronicles. TSBCPlay downloads and extracts this after the main VX Ace extraction succeeds if the Pictures folder is missing or empty."
+          "deletePackageAfterExtract": true
         }
       ],
       "files": [
-        {
-          "path": "Game.exe",
-          "sha256": "",
-          "required": true
-        },
-        {
-          "path": "Game.ini",
-          "sha256": "",
-          "required": false
-        },
-        {
-          "path": "Game.rgss3a",
-          "sha256": "",
-          "required": false
-        },
-        {
-          "path": "Graphics/Pictures",
-          "sha256": "",
-          "required": false,
-          "type": "directory",
-          "repairPackageId": "ssiavc-pictures"
-        }
+        { "path": "Game.exe", "required": true },
+        { "path": "Game.ini", "required": false },
+        { "path": "Graphics/Pictures", "required": false, "type": "directory", "repairPackageId": "ssiavc-pictures" }
+      ]
+    },
+    {
+      "id": "shadowfront",
+      "name": "SSIA: ShadowFront",
+      "latestVersion": " ",
+      "channel": " ",
+      "downloadUrl": " ",
+      "repairUrl": " ",
+      "fileName": "ShadowFront_0.5.0.zip",
+      "packageExecutableName": "Shadowfront.exe",
+      "playableExecutableName": "Game.exe",
+      "executableName": "ShadowFrontPackage.exe",
+      "iconPath": "../Assets/AppIcon.ico",
+      "websiteUrl": "https://tenstudiosbc.my.id/",
+      "itchUrl": "https://tenstudios.itch.io/",
+      "forceUpdate": false,
+      "files": [
+        { "path": "Game.exe", "required": true }
       ]
     }
   ]
