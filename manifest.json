@@ -1,4 +1,45 @@
 {
+  "_manifestNotes": {
+    "manifestVersion": "2.0",
+    "defaultGameId": "ssiavc",
+    "gamesInstallPath": "%LOCALAPPDATA%\\TSBCPlay\\Games\\{gameId}",
+    "launcherAppPath": "%LOCALAPPDATA%\\TSBCPlay\\App",
+    "logsPath": "%LOCALAPPDATA%\\TSBCPlay\\Logs",
+    "backupsPath": "%LOCALAPPDATA%\\TSBCPlay\\Backups",
+    "howToAddNewGame": [
+      "Copy the _gameTemplate object.",
+      "Paste it into the games array.",
+      "Change id to a unique value.",
+      "Change name and version.",
+      "Configure download and repair URLs.",
+      "Configure executable names.",
+      "Add files verification entries.",
+      "Add extraPackages if required."
+    ]
+  },
+
+  "_gameTemplate": {
+    "id": "newgameid",
+    "name": "New Game Name",
+    "latestVersion": "1.0.0",
+    "channel": "final",
+    "downloadUrl": "",
+    "repairUrl": "",
+    "fileName": "",
+    "packageExecutableName": "",
+    "playableExecutableName": "",
+    "executableName": "",
+    "sizeBytes": 0,
+    "sha256": "",
+    "repairSha256": "",
+    "iconPath": "../Assets/NewGameIcon.ico",
+    "websiteUrl": "",
+    "itchUrl": "https://tenstudios.itch.io/",
+    "forceUpdate": false,
+    "extraPackages": [],
+    "files": []
+  },
+
   "launcherName": "TSBCPlay Canary",
   "latestLauncherVersion": "1.0.2-canary.1",
   "launcherDownloadUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/releases/download/V1.0.2.Canary.1/TSBCPlay1.0.2.Canary.1.zip",
@@ -6,6 +47,7 @@
   "minimumSupportedLauncherVersion": "1.0.2-canary.1",
   "maintenanceMode": false,
   "maintenanceMessage": "",
+
   "games": [
     {
       "id": "ssiavc",
@@ -25,6 +67,7 @@
       "websiteUrl": "https://ssiavc.tenstudiosbc.my.id/",
       "itchUrl": "https://tenstudios.itch.io/",
       "forceUpdate": false,
+
       "extraPackages": [
         {
           "id": "ssiavc-pictures",
@@ -42,9 +85,10 @@
           "sizeBytes": 0,
           "sha256": "",
           "repairSha256": "",
-          "description": "Optional extra RPG Maker VX Ace Graphics/Pictures assets for SSIA Vanguard Chronicles. TSBCPlay downloads and extracts this after the main VX Ace extraction succeeds if the Pictures folder is missing or empty."
+          "description": "Optional extra RPG Maker VX Ace Graphics/Pictures assets."
         }
       ],
+
       "files": [
         {
           "path": "Game.exe",
@@ -69,6 +113,28 @@
           "repairPackageId": "ssiavc-pictures"
         }
       ]
+    },
+
+    {
+      "id": "ssiashadowfront",
+      "name": "SSIA: ShadowFront",
+      "latestVersion": "0.0.0",
+      "channel": "preregister",
+      "downloadUrl": "",
+      "repairUrl": "",
+      "fileName": "",
+      "packageExecutableName": "",
+      "playableExecutableName": "",
+      "executableName": "",
+      "sizeBytes": 0,
+      "sha256": "",
+      "repairSha256": "",
+      "iconPath": "",
+      "websiteUrl": "https://ssiasf.tenstudiosbc.my.id/",
+      "itchUrl": "https://tenstudios.itch.io/",
+      "forceUpdate": false,
+      "extraPackages": [],
+      "files": []
     }
   ]
 }
