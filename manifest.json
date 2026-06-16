@@ -129,7 +129,7 @@
       "sizeBytes": 0,
       "sha256": "",
       "repairSha256": "",
-      "iconPath": "../Assets/ssiasfappicon",
+      "iconPath": "../Assets/ssiasfappicon.ico",
       "websiteUrl": "https://ssiasf.tenstudiosbc.my.id/",
       "itchUrl": "https://tenstudios.itch.io/",
       "forceUpdate": false,
