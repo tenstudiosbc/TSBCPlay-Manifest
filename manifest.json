@@ -55,6 +55,9 @@
       "latestVersion": "1.1.1_11_06_26",
       "channel": "final",
       "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26/SSIA.Vanguard.Chronicles.1.1.1_11.06.26.zip",
+      "downloadUrls": [
+        "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26/SSIA.Vanguard.Chronicles.1.1.1_11.06.26.zip"
+      ],
       "repairUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26/SSIA.Vanguard.Chronicles.1.1.1_11.06.26.zip",
       "fileName": "SSIAVC_1.1.1_11_06_26.zip",
       "packageExecutableName": "SSIAVC.exe",
@@ -77,6 +80,9 @@
           "packageType": "zip",
           "fileName": "Pictures.zip",
           "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26_PicturesAssets/Pictures1.1.1_11.06.26.zip",
+          "downloadUrls": [
+            "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26_PicturesAssets/Pictures1.1.1_11.06.26.zip"
+          ],
           "repairUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26_PicturesAssets/Pictures1.1.1_11.06.26.zip",
           "extractTo": "Graphics/Pictures",
           "detectPath": "Graphics/Pictures",
