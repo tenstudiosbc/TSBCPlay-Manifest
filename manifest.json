@@ -1,34 +1,37 @@
 {
   "_manifestNotes": {
-    "manifestVersion": "2.0",
+    "manifestVersion": "3.0",
     "defaultGameId": "ssiavc",
     "gamesInstallPath": "%LOCALAPPDATA%\\TSBCPlay\\Games\\{gameId}",
     "launcherAppPath": "%LOCALAPPDATA%\\TSBCPlay\\App",
     "logsPath": "%LOCALAPPDATA%\\TSBCPlay\\Logs",
     "backupsPath": "%LOCALAPPDATA%\\TSBCPlay\\Backups",
+    "runtime": "RPG Maker MV HTML5 via integrated WebView2",
+    "gamePackageFormat": "ZIP containing a www folder",
+    "wwwReplacementRule": "On install or repair, the downloaded www folder replaces the existing installed www folder.",
     "howToAddNewGame": [
       "Copy the _gameTemplate object.",
       "Paste it into the games array.",
       "Change id to a unique value.",
       "Change name and version.",
       "Configure download and repair URLs.",
-      "Configure executable names.",
-      "Add files verification entries.",
-      "Add extraPackages if required."
+      "Set runtimeType to mvhtml5.",
+      "Set executableName to index.html.",
+      "Add files verification entries using paths relative to the game install root.",
+      "The game package must contain www/index.html."
     ]
   },
-
   "_gameTemplate": {
     "id": "newgameid",
     "name": "New Game Name",
     "latestVersion": "1.0.0",
     "channel": "final",
+    "runtimeType": "mvhtml5",
     "downloadUrl": "",
     "repairUrl": "",
+    "downloadUrls": [],
     "fileName": "",
-    "packageExecutableName": "",
-    "playableExecutableName": "",
-    "executableName": "",
+    "executableName": "index.html",
     "sizeBytes": 0,
     "sha256": "",
     "repairSha256": "",
@@ -36,10 +39,14 @@
     "websiteUrl": "",
     "itchUrl": "https://tenstudios.itch.io/",
     "forceUpdate": false,
-    "extraPackages": [],
-    "files": []
+    "files": [
+      {
+        "path": "www/index.html",
+        "sha256": "",
+        "required": true
+      }
+    ]
   },
-
   "launcherName": "TSBCPlay Canary",
   "latestLauncherVersion": "1.0.4-canary.1",
   "launcherDownloadUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/releases/download/V1.0.4.Canary.1/TSBCPlay1.0.4.Canary.1.zip",
@@ -47,22 +54,20 @@
   "minimumSupportedLauncherVersion": "1.0.4-canary.1",
   "maintenanceMode": false,
   "maintenanceMessage": "",
-
   "games": [
     {
       "id": "ssiavc",
       "name": "SSIA Vanguard Chronicles",
       "latestVersion": "1.1.1_11_06_26",
       "channel": "final",
+      "runtimeType": "mvhtml5",
       "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26/SSIA.Vanguard.Chronicles.1.1.1_11.06.26.zip",
       "downloadUrls": [
         "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26/SSIA.Vanguard.Chronicles.1.1.1_11.06.26.zip"
       ],
       "repairUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26/SSIA.Vanguard.Chronicles.1.1.1_11.06.26.zip",
       "fileName": "SSIAVC_1.1.1_11_06_26.zip",
-      "packageExecutableName": "SSIAVC.exe",
-      "playableExecutableName": "Game.exe",
-      "executableName": "SSIAVC.exe",
+      "executableName": "index.html",
       "sizeBytes": 0,
       "sha256": "",
       "repairSha256": "",
@@ -70,68 +75,25 @@
       "websiteUrl": "https://ssiavc.tenstudiosbc.my.id/",
       "itchUrl": "https://tenstudios.itch.io/",
       "forceUpdate": false,
-
-      "extraPackages": [
-        {
-          "id": "ssiavc-pictures",
-          "name": "SSIA Vanguard Chronicles Picture Assets",
-          "enabled": true,
-          "required": false,
-          "packageType": "zip",
-          "fileName": "Pictures.zip",
-          "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26_PicturesAssets/Pictures1.1.1_11.06.26.zip",
-          "downloadUrls": [
-            "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26_PicturesAssets/Pictures1.1.1_11.06.26.zip"
-          ],
-          "repairUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.1_11.06.26_PicturesAssets/Pictures1.1.1_11.06.26.zip",
-          "extractTo": "Graphics/Pictures",
-          "detectPath": "Graphics/Pictures",
-          "allowOverwrite": true,
-          "deletePackageAfterExtract": true,
-          "sizeBytes": 0,
-          "sha256": "",
-          "repairSha256": "",
-          "description": "Optional extra RPG Maker VX Ace Graphics/Pictures assets."
-        }
-      ],
-
       "files": [
         {
-          "path": "Game.exe",
+          "path": "www/index.html",
           "sha256": "",
           "required": true
-        },
-        {
-          "path": "Game.ini",
-          "sha256": "",
-          "required": false
-        },
-        {
-          "path": "Game.rgss3a",
-          "sha256": "",
-          "required": false
-        },
-        {
-          "path": "Graphics/Pictures",
-          "sha256": "",
-          "required": false,
-          "type": "directory",
-          "repairPackageId": "ssiavc-pictures"
         }
       ]
     },
-
     {
       "id": "ssiasf",
       "name": "SSIA: ShadowFront",
       "latestVersion": "0.0.0",
       "channel": "preregister",
+      "runtimeType": "mvhtml5",
       "downloadUrl": "",
       "repairUrl": "",
+      "downloadUrls": [],
       "fileName": "",
-      "packageExecutableName": "",
-      "playableExecutableName": "",
-      "executableName": "",
+      "executableName": "index.html",
       "sizeBytes": 0,
       "sha256": "",
       "repairSha256": "",
@@ -139,8 +101,13 @@
       "websiteUrl": "https://ssiasf.tenstudiosbc.my.id/",
       "itchUrl": "https://tenstudios.itch.io/",
       "forceUpdate": false,
-      "extraPackages": [],
-      "files": []
+      "files": [
+        {
+          "path": "www/index.html",
+          "sha256": "",
+          "required": true
+        }
+      ]
     }
   ]
 }
