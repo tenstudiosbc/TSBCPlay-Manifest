@@ -50,7 +50,7 @@
   "launcherName": "TSBCPlay Canary",
   "latestLauncherVersion": "1.0.6-canary.12",
   "launcherDownloadUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/releases/download/V1.0.6.Canary12/TSBCPlay1.0.6.Canary12.zip",
-  "patchNotesUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/releases/download/V1.0.6.Canary12/TSBCPlay1.0.6.Canary12.zip",
+  "patchNotesUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/blob/main/patch-notes.md",
   "minimumSupportedLauncherVersion": "1.0.6-canary.12",
   "maintenanceMode": false,
   "maintenanceMessage": "The Launcher is under maintance due to www/index.html wasnt found even on expected locations, please be patient while we resolved this",
@@ -58,14 +58,14 @@
     {
       "id": "ssiavc",
       "name": "SSIA Vanguard Chronicles",
-      "latestVersion": "1.1.2_Phase_1_Patch_3",
+      "latestVersion": "1.1.2_Phase_1_Patch_4",
       "channel": "final",
       "runtimeType": "mvhtml5",
-      "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2_Phase_1_Patch_3_WIN/www.zip",
+      "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2_Phase_1_Patch_4/www.zip",
       "downloadUrls": [
-        "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2_Phase_1_Patch_3_WIN/www.zip"
+        "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2_Phase_1_Patch_4/www.zip"
       ],
-      "repairUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2_Phase_1_Patch_3_WIN/www.zip",
+      "repairUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2_Phase_1_Patch_4/www.zip",
       "fileName": "www.zip",
       "executableName": "index.html",
       "sizeBytes": 0,
