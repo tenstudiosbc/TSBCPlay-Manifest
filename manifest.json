@@ -58,14 +58,14 @@
     {
       "id": "ssiavc",
       "name": "SSIA Vanguard Chronicles",
-      "latestVersion": "1.1.2_Phase_1_Patch_4",
+      "latestVersion": "1.1.2.1",
       "channel": "final",
       "runtimeType": "mvhtml5",
-      "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2_Phase_1_Patch_4/www.zip",
+      "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2.1/www.zip",
       "downloadUrls": [
-        "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2_Phase_1_Patch_4/www.zip"
+        "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2.1/www.zip"
       ],
-      "repairUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2_Phase_1_Patch_4/www.zip",
+      "repairUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2.1/www.zip",
       "fileName": "www.zip",
       "executableName": "index.html",
       "sizeBytes": 0,
