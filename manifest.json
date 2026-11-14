@@ -48,10 +48,10 @@
     ]
   },
   "launcherName": "TSBCPlay Canary",
-  "latestLauncherVersion": "1.0.6-canary.20",
-  "launcherDownloadUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/releases/download/V1.0.6.Canary20/TSBCPlay1.0.6.Canary20.zip",
+  "latestLauncherVersion": "1.0.6-canary.21",
+  "launcherDownloadUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/releases/download/V1.0.6.Canary21/TSBCPlay1.0.6.Canary21.zip",
   "patchNotesUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/blob/main/patch-notes.md",
-  "minimumSupportedLauncherVersion": "1.0.6-canary.20",
+  "minimumSupportedLauncherVersion": "1.0.6-canary.21",
   "maintenanceMode": false,
   "maintenanceMessage": "The Launcher is under maintance due to www/index.html wasnt found even on expected locations, please be patient while we resolved this",
   "games": [
