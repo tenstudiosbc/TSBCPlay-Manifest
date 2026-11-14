@@ -60,7 +60,7 @@
       "name": "SSIA Vanguard Chronicles",
       "latestVersion": "1.1.2.3-RWin",
       "channel": "final",
-      "runtimeType": "mvhtml5",
+      "runtimeType": "mv-windows-deployment",
       "packageFormat": "mv-windows-deployment",
       "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2.3-RWin/SSIAVC.zip",
       "downloadUrls": [
