@@ -1,24 +1,23 @@
 {
   "_manifestNotes": {
-    "manifestVersion": "3.0",
+    "manifestVersion": "3.1",
     "defaultGameId": "ssiavc",
     "gamesInstallPath": "%LOCALAPPDATA%\\TSBCPlay\\Games\\{gameId}",
     "launcherAppPath": "%LOCALAPPDATA%\\TSBCPlay\\App",
     "logsPath": "%LOCALAPPDATA%\\TSBCPlay\\Logs",
     "backupsPath": "%LOCALAPPDATA%\\TSBCPlay\\Backups",
-    "runtime": "RPG Maker MV HTML5 via integrated WebView2",
-    "gamePackageFormat": "ZIP containing a www folder",
-    "wwwReplacementRule": "On install or repair, the downloaded www folder replaces the existing installed www folder.",
+    "runtime": "RPG Maker MV HTML5 via WebView2 or complete RPG Maker MV Windows deployment via Game.exe",
+    "gamePackageFormat": "Per-game packageFormat: mv-html5-www (ZIP containing www/) or mv-windows-deployment (complete Windows deployment ZIP containing Game.exe and package.nw beside it).",
+    "wwwReplacementRule": "For mv-html5-www, the downloaded www folder replaces the existing installed www folder. For mv-windows-deployment, the complete deployment folder replaces the managed game install contents after backup.",
     "howToAddNewGame": [
-      "Copy the _gameTemplate object.",
-      "Paste it into the games array.",
-      "Change id to a unique value.",
-      "Change name and version.",
-      "Configure download and repair URLs.",
-      "Set runtimeType to mvhtml5.",
-      "Set executableName to index.html.",
-      "Add files verification entries using paths relative to the game install root.",
-      "The game package must contain www/index.html."
+      "Copy the _gameTemplate object and paste it into the games array.",
+      "Change id to a unique value, then set name, latestVersion, and channel.",
+      "Set runtimeType to mvhtml5 or mv-exe.",
+      "Set packageFormat to mv-html5-www or mv-windows-deployment.",
+      "Configure downloadUrl, downloadUrls, repairUrl, fileName, sizeBytes, and SHA-256 values.",
+      "For mv-html5-www, set executableName to index.html and include www/index.html in files.",
+      "For mv-windows-deployment, set executableName to Game.exe and package a complete Windows deployment with Game.exe and package.nw together.",
+      "Add files verification entries relative to the package root (for Windows deployments, relative to the folder containing Game.exe)."
     ]
   },
   "_gameTemplate": {
@@ -27,6 +26,7 @@
     "latestVersion": "1.0.0",
     "channel": "final",
     "runtimeType": "mvhtml5",
+    "packageFormat": "mv-html5-www",
     "downloadUrl": "",
     "repairUrl": "",
     "downloadUrls": [],
@@ -61,6 +61,7 @@
       "latestVersion": "1.1.2.3-R",
       "channel": "final",
       "runtimeType": "mvhtml5",
+      "packageFormat": "mv-html5-www",
       "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2.3-R/www.zip",
       "downloadUrls": [
         "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2.3-R/www.zip"
@@ -89,6 +90,7 @@
       "latestVersion": "0.0.0",
       "channel": "preregister",
       "runtimeType": "mvhtml5",
+      "packageFormat": "mv-html5-www",
       "downloadUrl": "",
       "repairUrl": "",
       "downloadUrls": [],
