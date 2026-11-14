@@ -61,7 +61,7 @@
       "latestVersion": "1.1.2.3-RWin",
       "channel": "final",
       "runtimeType": "mvhtml5",
-      "packageFormat": "mv-html5-www",
+      "packageFormat": "mv-windows-deployment",
       "downloadUrl": "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2.3-RWin/SSIAVC.zip",
       "downloadUrls": [
         "https://github.com/tenstudiosbc/ssiavc-assets/releases/download/1.1.2.3-RWin/SSIAVC.zip"
