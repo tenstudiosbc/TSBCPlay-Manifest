@@ -1,23 +1,38 @@
 {
   "_manifestNotes": {
-    "manifestVersion": "3.2",
+    "manifestVersion": "3.3",
     "defaultGameId": "ssiavc",
     "gamesInstallPath": "%LOCALAPPDATA%\\TSBCPlay\\Games\\{gameId}",
     "launcherAppPath": "%LOCALAPPDATA%\\TSBCPlay\\App",
     "logsPath": "%LOCALAPPDATA%\\TSBCPlay\\Logs",
     "backupsPath": "%LOCALAPPDATA%\\TSBCPlay\\Backups",
-    "runtime": "RPG Maker MV HTML5 via WebView2 or complete RPG Maker MV Windows deployment via Game.exe",
-    "gamePackageFormat": "Per-game packageFormat: mv-html5-www (ZIP containing www/) or mv-windows-deployment (complete Windows deployment with Game.exe and either package.nw or a valid root package.json whose main points to an existing entry file, normally www/index.html).",
+    "runtime": "Manifest-driven RPG Maker MV HTML5/native, Godot HTML5/native, and LibGDX/LWJGL native games",
+    "gamePackageFormat": "Per-game packageFormat: mv-html5-www; mv-windows-deployment; windows-game-folder; gradle-project; godot-html5; libgdx-html5.",
     "wwwReplacementRule": "For mv-html5-www, the downloaded www folder replaces the existing installed www folder. For mv-windows-deployment, the complete deployment folder replaces the managed game install contents after backup.",
     "howToAddNewGame": [
-      "Copy the _gameTemplate object and paste it into the games array.",
-      "Change id to a unique value, then set name, latestVersion, and channel.",
-      "Set runtimeType to mvhtml5 or mv-exe and packageFormat to mv-html5-www or mv-windows-deployment.",
-      "Configure downloadUrl, downloadUrls, repairUrl, fileName, sizeBytes, and SHA-256 values.",
-      "For mv-html5-www, set executableName to index.html and include www/index.html in files.",
-      "For mv-windows-deployment, set executableName to Game.exe and include the complete exported Windows deployment. Include package.nw or a valid root package.json whose main entry resolves to an existing file (standard MV: www/index.html), plus the full www game folder and NW.js runtime files.",
-      "ZIPs may contain one enclosing game folder; TSBCPlay locates the executable and validates the deployment root.",
-      "Add files verification entries relative to the deployment root for Windows packages or install root for HTML5 packages."
+      "Copy the _gameTemplate object into the games array and assign a unique id.",
+      "Set runtimeType and packageFormat for the game's exported package; do not point at a Gradle source project unless its distribution output is packaged for launch.",
+      "For RPG Maker MV HTML5 use runtimeType mvhtml5 and packageFormat mv-html5-www with www/index.html.",
+      "For a complete RPG Maker MV Windows deployment use runtimeType mv-exe and packageFormat mv-windows-deployment with Game.exe plus its NW.js package/runtime files.",
+      "For native Godot Windows exports use runtimeType godot and packageFormat godot-windows (or windows-game-folder); set launchExecutable to the exported .exe and include companion .pck files.",
+      "For Godot HTML5 exports use runtimeType godot and packageFormat godot-html5; ZIP should contain index.html and the exported wasm/pck/assets files.",
+      "For LibGDX/LWJGL Windows distributions use runtimeType libgdx or lwjgl and packageFormat libgdx-windows, lwjgl-windows, windows-game-folder, or gradle-project (a packaged Gradle wrapper project); set launchExecutable to a .exe, .bat, .cmd, or .jar in the packaged distribution.",
+      "For native games set launchExecutable relative to the deployment root. Optional launchArguments, workingDirectory, and javaExecutable, javaMainClass, and javaClasspath configure arguments, current directory, and Java/classpath for .jar packages.",
+      "Native game ZIPs may contain one enclosing folder; TSBCPlay locates the configured launchExecutable and stages the complete sibling deployment folder.",
+      "Add files verification entries using safe relative paths from the installed game root."
+    ],
+    "gameRuntimePath": "%LOCALAPPDATA%\\TSBCPlay\\Games\\{gameId}\\www\\index.html",
+    "gamePathRules": [
+      "Each game uses its own install root derived dynamically from its manifest id: Games\\{gameId}.",
+      "MV HTML5 packages must contain www/index.html beneath that game's install root.",
+      "Godot HTML5 packages use their exported index.html and asset files in the managed install root.",
+      "Native deployments use the configured launchExecutable and retain companion files in the managed install root."
+    ],
+    "runtimeModes": [
+      "html5 games use TSBCPlay WebView2 with the installed www/index.html.",
+      "mv-exe games launch the complete configured MV Windows deployment.",
+      "godot native games launch the manifest launchExecutable with companion .pck/assets; Godot HTML5 games run through the integrated WebView2 host.",
+      "libgdx/lwjgl native games launch the manifest launchExecutable; .jar packages use Java -jar by default or Java -cp when javaMainClass/javaClasspath are configured, and .bat/.cmd packages run through cmd.exe."
     ]
   },
   "_gameTemplate": {
@@ -45,13 +60,19 @@
         "sha256": "",
         "required": true
       }
-    ]
+    ],
+    "launchExecutable": "",
+    "launchArguments": "",
+    "workingDirectory": "",
+    "javaExecutable": "",
+    "javaMainClass": "",
+    "javaClasspath": ""
   },
   "launcherName": "TSBCPlay Canary",
-  "latestLauncherVersion": "1.0.7-canary.1",
-  "launcherDownloadUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/releases/download/V1.0.7.Canary1/TSBCPlay1.0.7.Canary1.zip",
+  "latestLauncherVersion": "1.0.7.Canary2",
+  "launcherDownloadUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/releases/download/V1.0.7.Canary2/TSBCPlay1.0.7.Canary2.zip",
   "patchNotesUrl": "https://github.com/tenstudiosbc/TSBCPlay-Manifest/blob/main/patch-notes.md",
-  "minimumSupportedLauncherVersion": "1.0.7-canary.1",
+  "minimumSupportedLauncherVersion": "1.0.7.Canary2",
   "maintenanceMode": false,
   "maintenanceMessage": "The Launcher is under maintance due to www/index.html wasnt found even on expected locations, please be patient while we resolved this",
   "games": [
